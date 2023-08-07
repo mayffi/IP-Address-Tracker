@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+    height:100vh;
+}
+.banner-container {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+form {
+  margin: 20px;
+}
+input {
+  width: 500px;
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  margin: auto;
+  outline: none;
+}
+
+button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px 15px 6px 15px;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0px 10px 10px 0px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.address-container {
+  background-color: #fff;
+  height: 150px;
+  width: 80%;
+  border: solid black 4px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  position: relative;
+  bottom: 70px;
+  z-index: 1;
+}
+
+.adress-container::after{
+    border-right: 2px solid hsl(0, 0%, 59%);
+
+}
+
+.address-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.address-details h3 {
+  color:hsl(0, 0%, 59%);
+  font-size: 0.8rem;
+}
+
+
+.map-area {
+ border:#000 solid 2px;
+ height:100%;
+ margin: 0 auto 0 auto;
+ position: relative;
+bottom:150px;
+z-index: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}

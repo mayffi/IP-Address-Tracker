@@ -4,25 +4,13 @@ import { IpContext } from "../IpContext";
 //Setlocation and error are called as props to this component
 function BannerArea({setLocation,setError}) {
     const{ip,setIP,handleSearch}=useContext(IpContext);
-    console.log(ip)
+   
 
-    // const fetchResults = async () => {
-    //     await fetch(`http://localhost:3001/ipaddress/country,city?ipAddress=${ip}`)
-    //       .then((response) => response.json())
-    //       .then((data) => {
-    //         console.log(data);
-    //         setLocation(data)       
-    //      })
-    
-    //       .catch((error) => {
-    //         setError("There was an error while fetching the IP location")
-    //         console.log("error", error);
-    //       });
-    //   }
     const handleInputChange = (e) => {
-        if(!ip === null) return
-        setIP(e.target.value);
+    setIP(e.target.value);
+     
     }
+
    
   return (
     <>
